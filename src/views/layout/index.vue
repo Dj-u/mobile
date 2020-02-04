@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <!--使用vant导航组件  -->
-    <van-nav-bar fixed v-if="showNavBar" title="黑马头条" right-text="搜索"></van-nav-bar>
+    <van-nav-bar @click-right="$router.push('/search')" fixed v-if="showNavBar" title="黑马头条" right-text="搜索"></van-nav-bar>
     <!-- 二级路由容器  首页/问答/视频/我的-->
     <!-- :class="{ 名称: 布尔值 }" -->
     <div class="my-wrapper" :class="{ noTop:!showNavBar}">
